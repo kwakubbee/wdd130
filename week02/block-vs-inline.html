@@ -15,25 +15,38 @@
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
         <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <!--answer: After changing the above div to span, I noticed that the span element did not take up the 
+        whole width of its line as the div did and also, the span lost the styling form CSS due to disconnection in 
+        CSS selector -->
 
         <h2>Task 2: Nesting Inline in Block</h2>
         <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
-        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
-            how it flows within the line.</p>
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph.
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories">HTML content
+                categories</a>
+            Observe how it flows within the line.
+        </p>
+        <!--answer: After adding another inline element, ie. <a>, it did not start a new line but fitted in the block 
+        element line-->
 
         <h2>Task3: Nesting Block in Inline</h2>
-        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <span>Try placing a &lt;div&gt; <div>A block element placed in an inline element</div>inside a
+            &lt;span&gt;
+            element.</span>
+        <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <!--answer: The block element ie. <div> placed in the inline <span> quickly begins from the next line 
+        and takes the full width of the line, pushing the rest of the original content to the third line...-->
 
-
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
         <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
         <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
         <button type="button">&lt;button&gt; element</button>
+        <!--answer: They are all in line on the loaded web page despite they seem to be on separate lines in the 
+        HTML file-->
     </main>
 </body>
 
