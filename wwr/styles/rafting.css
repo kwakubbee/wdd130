@@ -1,0 +1,85 @@
+:root{
+    --primary-color: #055a05; /*forest green*/
+    --secondary-color: #5c5c5c; /*warm sand*/
+    --accent1-color: #dbd4c4; /*light golden yellow*/
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--accent1-color);
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0 auto
+}
+main{
+    border-bottom: 1px solid rgb(189, 181, 181);
+}
+
+h1, h2{
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, section, section p, footer p, article{
+    margin: 16px;
+    padding: 8px;
+    color: var(--secondary-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, article{
+    position: absolute;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    opacity: 0.6;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(161, 154, 154);
+    opacity: 0.7;
+    padding: 5px;
+}
+
+article{
+    bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;    
+}
+
+.hero article img{
+    display: inline;
+    float: right;
+    width: 125px;
+}
