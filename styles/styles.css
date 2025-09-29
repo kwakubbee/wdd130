@@ -97,10 +97,11 @@ footer{
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #ddd;
+    list-style-type: none;
     color: #000;
+    background-color: #ddd;
 }
-
+/* 
 .indent{
     padding-left: 2 rem;
-}
+} */
