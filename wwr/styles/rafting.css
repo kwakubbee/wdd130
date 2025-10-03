@@ -21,7 +21,49 @@ header, main, footer{
     width: 840px;
     margin: 0 auto
 }
+
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 10px solid rgb(71, 69, 69);
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(187, 53, 53);
+}
+
+header img{
+    width: 80%;
+    height: auto;
+    border: 1px solid rgba(10, 10, 10, 0.1);
+    padding: 1px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 20px 10px;
+    list-style-type: none;
+    background-color: black;
+    border: 2px solid rgba(48, 47, 47, 0.5);
+    border-radius: 3px;
+    opacity: 0.6;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-right: 30px;
+    color:rgb(4, 237, 253);
+    font-weight: 700;
+}
+
+.links{
+    border-right: 3px solid rgb(48, 47, 47);
+}
+
 main{
+    margin-top: 1px;
     border-bottom: 1px solid rgb(189, 181, 181);
 }
 
@@ -37,10 +79,6 @@ nav, section, section p, footer p, article{
     color: var(--secondary-color);
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero{
     position: relative;
 }
@@ -49,6 +87,12 @@ nav, section, section p, footer p, article{
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero article img{
+    display: inline;
+    float: right;
+    width: 125px;
 }
 
 h1, article{
@@ -78,8 +122,58 @@ article{
     height: auto;    
 }
 
-.hero article img{
-    display: inline;
-    float: right;
-    width: 125px;
+section p{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.history-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-info img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(100, 100, 100, 0.2);
+    padding: 1px;
+}
+
+.img-wrapper{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inside-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: var(--body-font);
+}
+.inside-wrapper img{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px solid rgba(173, 133, 133, 0.2);
+    padding: 1px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+footer p{
+    text-align: center;
+}
+.social-media a img{
+    width: 35px;
+    border-radius: 5px;
 }
