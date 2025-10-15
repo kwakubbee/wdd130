@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Trials</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <meta name="author" content="Bright Kwaku Boateng">
+    <meta name="description" content="Building forms">
+
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- form elements will go here -->
+                <div class="for-item">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <br>
+                <div class="for-item column2">
+                    <label for="useremail">Email:</label><br>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend><br>
+                <!-- form elements will go here -->
+                <div class="for-item column1">
+                    <label>Browser:
+                        <select id="browser" name="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="edge">Edge</option>
+                            <option value="safari">Safari</option>
+                            <option value="brave">Brave</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+                <div class="for-item column1">
+                    <label>Do you have a household pet<input type="checkbox" id="pet" name="pet"
+                            value="Rabbit"></label><br><br>
+                    <label>List of places you have lived:<textarea name="feedback" id="feedback" rows="4"
+                            placeholder="List of places you have lived"></textarea></label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
